@@ -2,10 +2,7 @@ import Profile from "./components/profile";
 
 export default function Home() {
   return (
-    <div
-      className="page-wrapper p-20"
-      style={{ backgroundImage: "url(/background-gradient.png)" }}
-    >
+    <div className="page-wrapper p-20">
       <div className="z-index-2 w-full">
         <div className="flex flex-row flex-wrap gap-10 justify-center">
           <Profile />
