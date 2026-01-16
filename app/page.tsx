@@ -1,16 +1,13 @@
+import Description from "./components/description";
 import Profile from "./components/profile";
 
 export default function Home() {
   return (
-    <div className="page-wrapper p-20">
-      <div className="z-index-2 w-full">
-        <div className="flex flex-row flex-wrap gap-10 justify-center">
+    <div className="page-wrapper">
+      <div className="z-index-2 w-full pt-20 max-w-[32rem] md:max-w-[48rem] lg:max-w-[64rem]">
+        <div className="flex flex-row flex-wrap gap-10 justify-center items-stretch pb-5">
           <Profile />
-          <div className="flex flex-col w-full md:w-[50%] lg: w-[60%]">
-            <div className="bg-neutral-100 dark:bg-neutral-900 text-amber-950 dark:text-amber-100 rounded rounded-md p-5 shadow-lg/10">
-              Test
-            </div>
-          </div>
+          <Description />
         </div>
       </div>
     </div>

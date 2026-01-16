@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Profile() {
   return (
-    <div className="w-full md:w-[40%] lg:w-[30%] h-full">
+    <div className="w-full md:w-[40%] lg:w-[30%]">
       <div className="bg-neutral-100 dark:bg-neutral-900 text-amber-950 dark:text-amber-100 rounded rounded-md p-5 flex flex-col w-full items-center shadow-lg/10 gap-4 top-0 md:sticky">
         <div className="w-50 md:w-30 lg:w-50 relative h-auto aspect-square">
           <Image
@@ -76,7 +76,7 @@ function Profile() {
             </svg>
           </a>
         </div>
-        <div className="flex flex-col rounded-md bg-neutral-200 dark:bg-neutral-800 w-full p-1 text-sm md:text-xs lg:text-sm">
+        <div className="flex flex-col rounded-md bg-neutral-200 dark:bg-neutral-800 w-full p-1 text-sm ">
           <div
             className="border-b p-2 flex flex-row gap-2"
             title="Phone Number"
