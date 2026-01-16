@@ -1,3 +1,5 @@
+"use client";
+
 import Description from "./components/description";
 import Profile from "./components/profile";
 

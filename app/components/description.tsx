@@ -1,6 +1,7 @@
 import { Archivo_Black } from "next/font/google";
 import Skill from "./skill";
 import Project from "./project";
+import ContactMe from "./contactme";
 
 const archivo = Archivo_Black({
   subsets: ["latin"],
@@ -233,6 +234,17 @@ export default function Description() {
               low-quality code and structure. It is currently on haitus in favor
               of web development projects.
             </Project>
+          </div>
+          <div className={"text-2xl " + archivo.className}>
+            <h2>Contact Me!</h2>
+            <hr />
+          </div>
+          <div>
+            <div className="mb-5">
+              Contact me through this form or through the details in my profile
+              section.
+            </div>
+            <ContactMe />
           </div>
         </div>
       </div>
