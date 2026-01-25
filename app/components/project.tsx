@@ -22,18 +22,24 @@ export default function Project({
         <a href={link} className={"w-full text-xl " + archivo.className}>
           {name} -{" "}
           <span
-            className={"text-l " + (active ? "text-green-500" : "text-red-500")}
+            className={
+              "text-l " +
+              (active ? "text-green-500" : "text-blue-500 opacity-70")
+            }
           >
-            {active ? "Active" : "Inactive"}
+            {active ? "In Development" : "On Hiatus"}
           </span>
         </a>
       ) : (
         <div className={"w-full text-xl " + archivo.className}>
           {name} -{" "}
           <span
-            className={"text-l " + (active ? "text-green-500" : "text-red-500")}
+            className={
+              "text-l " +
+              (active ? "text-green-500" : "text-blue-500 opacity-70")
+            }
           >
-            {active ? "Active" : "Inactive"}
+            {active ? "In Development" : "On Hiatus"}
           </span>
         </div>
       )}
