@@ -24,6 +24,10 @@
   }
 }
 
+.bottom-padding {
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom));
+}
+
 @media (prefers-color-scheme: light) {
   .page-wrapper {
     background-image: url("/background-gradient.png");
