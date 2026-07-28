@@ -2,8 +2,6 @@ import { Archivo_Black } from "next/font/google";
 import Skill from "./skill";
 import Project from "./project";
 import ContactMe from "./contactme";
-import { PopupButton } from "react-calendly";
-import Link from "next/link";
 
 const archivo = Archivo_Black({
   subsets: ["latin"],
@@ -20,44 +18,70 @@ export default function Description() {
             <h2>About</h2>
             <hr />
           </div>
-          <div className="text-neutral-700 dark:text-neutral-300">
-            <p>
-              Hello there! My name is Caleb, and I&apos;m a recent graduate of
-              California State University - Fullerton with a{" "}
-              <span className="text-amber-700 dark:text-amber-200">
-                B.S. in Computer Science
-              </span>
-              . While at CSUF I focused on{" "}
-              <span className="text-amber-700 dark:text-amber-200">
-                full-stack web development
-              </span>
-              , resulting in the development of NextNest: a webapp where users
-              can search for and take quizzes to get recommendations on cities
-              they may want to move to. My main tech stack is{" "}
-              <span className="text-amber-700 dark:text-amber-200">
-                PERN - Postgres, Express.js, React, and Node.js
-              </span>
-              , but I have recently been experimenting with technologies such as
-              Next.js and Ruby on Rails. I love building software and helping
-              people understand how it works.
-              <br />
-              <br />
-              I&apos;m also a STEM and Computer Science Tutor! I can tutor high
-              school and college-level topics such as AP Computer Science, Data
-              Structures, Algorithms, and Software Design. I taught my peers
-              advanced concepts such as SQL Queries and Git version control.
-              From Java and Python to Statistics and Algebra to Physics and
-              Precalc, I cover a wide range of CS and STEM subjects. If
-              you&apos;re interested you can book a free 15-minute consultation
-              on my Calendly link below!
-            </p>
+          <div className="flex flex-row flex-wrap justify-around gap-y-3 text-neutral-700 dark:text-neutral-300">
+            <div className="border rounded-lg w-full p-3 lg:w-[45%] flex flex-col gap-4">
+              <h3
+                className={
+                  "flex flex-row flex-nowrap justify-start gap-2 w-full align-center text-xl " +
+                  archivo.className
+                }
+              >
+                Tutoring
+              </h3>
+              <div>
+                <p>
+                  I&apos;m a STEM and Computer Science Tutor! I can tutor high
+                  school and college-level topics such as AP Computer Science,
+                  Data Structures, Algorithms, and Software Design. I taught my
+                  peers advanced concepts such as SQL Queries and Git version
+                  control. From Java and Python to Statistics and Algebra to
+                  Physics and Precalc, I cover a wide range of CS and STEM
+                  subjects. If you&apos;re interested you can book a free
+                  15-minute consultation on my Calendly link below!
+                </p>
+              </div>
+              <div>
+                <a
+                  className="p-3 bg-amber-400 dark:bg-amber-600 rounded-sm hover:bg-amber-500 transition-all duration-100"
+                  href="https://calendly.com/calebbcassin/tutoring-consultation"
+                >
+                  Book an Appointment!
+                </a>
+              </div>
+            </div>
+            <div className="border rounded-lg w-full p-3 lg:w-[45%] flex flex-col gap-4">
+              <h3
+                className={
+                  "flex flex-row flex-nowrap justify-start gap-2 w-full align-center text-xl " +
+                  archivo.className
+                }
+              >
+                Software Development
+              </h3>
+              <div>
+                <p>
+                  I&apos;m a recent graduate of California State University -
+                  Fullerton with a{" "}
+                  <span className="text-amber-700 dark:text-amber-200">
+                    B.S. in Computer Science
+                  </span>
+                  . While at CSUF I focused on{" "}
+                  <span className="text-amber-700 dark:text-amber-200">
+                    full-stack web development
+                  </span>
+                  , resulting in the development of NextNest: a webapp where
+                  users can search for and take quizzes to get recommendations
+                  on cities they may want to move to. My main tech stack is{" "}
+                  <span className="text-amber-700 dark:text-amber-200">
+                    PERN - Postgres, Express.js, React, and Node.js
+                  </span>
+                  , but I have recently been experimenting with technologies
+                  such as Next.js and Ruby on Rails. I love building software
+                  and helping people understand how it works.
+                </p>
+              </div>
+            </div>
             <br />
-            <a
-              className="p-3 bg-amber-400 dark:bg-amber-600 rounded-sm hover:bg-amber-500 transition-all duration-100"
-              href="https://calendly.com/calebbcassin/tutoring-consultation"
-            >
-              Book an Appointment!
-            </a>
           </div>
           <div className={"text-2xl " + archivo.className}>
             <h2>My Skills</h2>
@@ -130,40 +154,27 @@ export default function Description() {
               databases with various security needs
             </Skill>
             <Skill
-              name="Teamwork"
+              name="REST APIs"
               icon={
-                <svg height="100%" width="100%" viewBox="0 0 512 512">
-                  <g>
-                    <circle
-                      className="fill-neutral-600"
-                      cx="398.784"
-                      cy="183.234"
-                      r="65.636"
-                    />
-                    <path
-                      className="fill-neutral-600"
-                      d="M512,394.402v-58.12c0-61.16-66.752-62.28-66.752-62.28h-92.92c0,0-66.752,0.744-66.752,62.28v58.12
-		H512z"
-                    />
-                  </g>
-                  <g>
-                    <circle
-                      className="fill-red-600"
-                      cx="113.215"
-                      cy="183.244"
-                      r="65.636"
-                    />
-                    <path
-                      className="fill-red-600"
-                      d="M226.4,394.402v-58.12c0-61.16-66.752-62.28-66.752-62.28H66.752c0,0-66.752,0.744-66.752,62.28
-		v58.12H226.4z"
-                    />
-                  </g>
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.763 13.7944L20.029 16.0222C19.8786 16.3163 19.7105 16.6051 19.5244 16.8873C19.3383 17.1695 19.1391 17.4378 18.9281 17.6919L16.4377 17.4142C15.7715 17.9608 15.0027 18.3869 14.1645 18.6592L13.0002 20.945C12.6719 20.9813 12.3382 21 12.0002 21C11.6622 21 11.3285 20.9813 11.0002 20.945L9.83293 18.6582C8.99428 18.3854 8.22514 17.9585 7.5589 17.4111L5.05407 17.6915C4.84303 17.4374 4.64381 17.1691 4.45774 16.8869C4.27168 16.6047 4.10356 16.3159 3.95312 16.0218L5.22637 13.7814C5.07803 13.2142 5.00021 12.6139 5.00021 12.0002C5.00021 11.3749 5.08219 10.7688 5.23599 10.192L3.95351 7.936C4.10394 7.64191 4.27206 7.3531 4.45812 7.07091C4.64419 6.78873 4.84341 6.52043 5.05445 6.2663L7.60942 6.55327C8.26776 6.02075 9.01625 5.60683 9.84 5.33984M9.83614 5.33996L11 3.05493C11.3283 3.01863 11.662 3 12 3C12.338 3 12.6716 3.01863 13 3.05493L14.1638 5.33996C14.9882 5.60716 15.7389 6.01764 16.3976 6.55077L18.9275 6.26661C19.1385 6.52074 19.3377 6.78904 19.5238 7.07123C19.7098 7.35341 19.878 7.64223 20.0284 7.93632L18.7592 10.1697M18.7594 10.1732C18.9164 10.7556 19.0002 11.3681 19.0002 12.0002C19.0002 12.6215 18.9193 13.2239 18.7673 13.7974M15.0002 12.0002C15.0002 13.657 13.6571 15.0002 12.0002 15.0002C10.3433 15.0002 9.0002 13.657 9.0002 12.0002C9.0002 10.3433 10.3433 9.00015 12.0002 9.00015C13.6571 9.00015 15.0002 10.3433 15.0002 12.0002Z"
+                    stroke="#000000"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               }
             >
-              Able to effectively communicate with team members and organize
-              tasks in agile environments
+              Effectively designs REST APIs using MVC and N-Layer architectures
+              with Node.js/Express tech stacks
             </Skill>
             <Skill
               name="Design"
@@ -176,7 +187,7 @@ export default function Description() {
                 </svg>
               }
             >
-              Knowledgable about the software design and architecture process,
+              Knowledgeable about the software design and architecture process,
               ensuring high satisfaction
             </Skill>
             <Skill
@@ -207,7 +218,11 @@ export default function Description() {
             <hr />
           </div>
           <div className="flex flex-row flex-wrap justify-around gap-y-3">
-            <Project name="Next Nest" link="https://next-nest.net">
+            <Project
+              name="Next Nest"
+              link="https://next-nest.net"
+              stack="MySQL, Node/Express, React"
+            >
               Next Nest was my Senior Capstone project that used a SERN tech
               stack. The main goal was to provide a way for people to find a
               city that meets as many of their needs as possible. This was
@@ -220,7 +235,7 @@ export default function Description() {
             <Project
               name="Color Palette Picker"
               link="https://colorpalettepicker.up.railway.app/"
-              active={true}
+              stack="PERN"
             >
               Color Palette Picker is a client-side React app that allows the
               user to create a color palette file from an image. Different
@@ -230,7 +245,7 @@ export default function Description() {
               the picker and add a file conversion page that lets users convert
               between different palette types.
             </Project>
-            <Project name="Starship">
+            <Project name="Starship" stack="MongoDB, Node.js">
               Starship is a TypeScript/Discord.js Discord bot game where players
               can explore space, collect resources, buy pets, and much more. I
               rewrote the original JavaScript version of this bot due to

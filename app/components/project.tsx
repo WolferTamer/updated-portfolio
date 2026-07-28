@@ -9,38 +9,22 @@ export default function Project({
   name,
   children,
   link,
-  active = false,
+  stack,
 }: {
   name: string;
   children: React.ReactNode;
+  stack: string;
   link?: string;
-  active?: boolean;
 }) {
   return (
     <div className="border rounded-lg w-full p-3 flex flex-col gap-4">
       {link ? (
         <a href={link} className={"w-full text-xl " + archivo.className}>
-          {name} -{" "}
-          <span
-            className={
-              "text-l " +
-              (active ? "text-green-500" : "text-blue-500 opacity-70")
-            }
-          >
-            {active ? "In Development" : "On Hiatus"}
-          </span>
+          {name} - <span className={"text-l text-green-500"}>{stack}</span>
         </a>
       ) : (
         <div className={"w-full text-xl " + archivo.className}>
-          {name} -{" "}
-          <span
-            className={
-              "text-l " +
-              (active ? "text-green-500" : "text-blue-500 opacity-70")
-            }
-          >
-            {active ? "In Development" : "On Hiatus"}
-          </span>
+          {name} - <span className={"text-l text-green-500"}>{stack}</span>
         </div>
       )}
 
