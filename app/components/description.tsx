@@ -2,6 +2,8 @@ import { Archivo_Black } from "next/font/google";
 import Skill from "./skill";
 import Project from "./project";
 import ContactMe from "./contactme";
+import { PopupButton } from "react-calendly";
+import Link from "next/link";
 
 const archivo = Archivo_Black({
   subsets: ["latin"],
@@ -11,8 +13,8 @@ const archivo = Archivo_Black({
 
 export default function Description() {
   return (
-    <div className="w-full md:w-[50%] lg: w-[60%]">
-      <div className="bg-neutral-100 dark:bg-neutral-900 text-amber-950 dark:text-amber-100 rounded rounded-md p-5 shadow-lg/10 flex flex-col ">
+    <div className="w-full md:w-[50%] lg:w-[60%]">
+      <div className="bg-neutral-100 dark:bg-neutral-900 text-amber-950 dark:text-amber-100 rounded-md p-5 shadow-lg/10 flex flex-col ">
         <div className="flex flex-col gap-5">
           <div className={"text-2xl " + archivo.className}>
             <h2>About</h2>
@@ -25,36 +27,37 @@ export default function Description() {
               <span className="text-amber-700 dark:text-amber-200">
                 B.S. in Computer Science
               </span>
-              . At my time at CSUF I focused on{" "}
+              . While at CSUF I focused on{" "}
               <span className="text-amber-700 dark:text-amber-200">
                 full-stack web development
               </span>
-              , resulting in the development of NextNest. My main tech stack is{" "}
+              , resulting in the development of NextNest: a webapp where users
+              can search for and take quizzes to get recommendations on cities
+              they may want to move to. My main tech stack is{" "}
               <span className="text-amber-700 dark:text-amber-200">
-                SERN - SQL, Express.js, React, and Node.js
+                PERN - Postgres, Express.js, React, and Node.js
               </span>
               , but I have recently been experimenting with technologies such as
-              Next.js and Ruby on Rails.
+              Next.js and Ruby on Rails. I love building software and helping
+              people understand how it works.
               <br />
               <br />
-              Beyond specific tech skills, I specialize in{" "}
-              <span className="text-amber-700 dark:text-amber-200">
-                engineering E2E Systems
-              </span>{" "}
-              with a focus on{" "}
-              <span className="text-amber-700 dark:text-amber-200">
-                automated software testing
-              </span>
-              . I excell in handling{" "}
-              <span className="text-amber-700 dark:text-amber-200">
-                Git version management
-              </span>{" "}
-              and{" "}
-              <span className="text-amber-700 dark:text-amber-200">
-                teamwork/communication
-              </span>{" "}
-              in general through my numerous projects.
+              I&apos;m also a STEM and Computer Science Tutor! I can tutor high
+              school and college-level topics such as AP Computer Science, Data
+              Structures, Algorithms, and Software Design. I taught my peers
+              advanced concepts such as SQL Queries and Git version control.
+              From Java and Python to Statistics and Algebra to Physics and
+              Precalc, I cover a wide range of CS and STEM subjects. If
+              you&apos;re interested you can book a free 15-minute consultation
+              on my Calendly link below!
             </p>
+            <br />
+            <a
+              className="p-3 bg-amber-400 dark:bg-amber-600 rounded-sm hover:bg-amber-500 transition-all duration-100"
+              href="https://calendly.com/calebbcassin/tutoring-consultation"
+            >
+              Book an Appointment!
+            </a>
           </div>
           <div className={"text-2xl " + archivo.className}>
             <h2>My Skills</h2>

@@ -3,7 +3,7 @@ import Image from "next/image";
 function Profile() {
   return (
     <div className="w-full md:w-[40%] lg:w-[30%]">
-      <div className="bg-neutral-100 dark:bg-neutral-900 text-amber-950 dark:text-amber-100 rounded rounded-md p-5 flex flex-col w-full items-center shadow-lg/10 gap-4 top-0 md:sticky">
+      <div className="bg-neutral-100 dark:bg-neutral-900 text-amber-950 dark:text-amber-100 rounded-md p-5 flex flex-col w-full items-center shadow-lg/10 gap-4 top-0 md:sticky">
         <div className="w-50 md:w-30 lg:w-50 relative h-auto aspect-square">
           <Image
             src="/squareprofile.jpeg"
@@ -15,7 +15,7 @@ function Profile() {
         </div>
         <h4 className="text-2xl">Caleb Cassin</h4>
         <div className="flex flex-row text-sm flex-wrap gap-3 justify-center items-center">
-          <div>Junior Software Engineer</div>
+          <div>Junior Software Engineer & STEM Tutor</div>
           <div>Nashville, TN</div>
         </div>
         <div className="flex flex-row gap-3">
@@ -66,7 +66,7 @@ function Profile() {
               height="1.5em"
               viewBox="0 0 72 72"
               fill="none"
-              className="[&>*]:fill-gray-800 [&>*]:dark:fill-neutral-100"
+              className="*:fill-gray-800 *:dark:fill-neutral-100"
             >
               <path d="M11.9362 56.1235H20.4189V35.5227L8.30078 26.434V52.4881C8.30078 54.4997 9.93067 56.1235 11.9362 56.1235Z"></path>
               <path d="M49.5025 56.1235H57.9853C59.9969 56.1235 61.6207 54.4936 61.6207 52.4881V26.434L49.5025 35.5227"></path>
